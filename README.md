@@ -169,24 +169,4 @@ pytest
 
 The tests use a fake encoder so they validate the system logic without downloading model weights.
 
-## Why Pretrained Models?
 
-This project intentionally uses pretrained face recognition embeddings instead of training a CNN from scratch. Face recognition needs large, diverse identity datasets and careful evaluation. In a production-style system, the engineering work is building a reliable detection, embedding, matching, API, database, and deployment pipeline around a strong pretrained model.
-
-## Portfolio Add-Ons
-
-- Liveness detection to reduce spoofing with printed photos or phone screens
-- ONNX export for optimized CPU inference
-- JWT authentication for protected API access
-- Streamlit dashboard for attendance analytics
-- PostgreSQL migration for multi-machine deployment
-
-## CV Bullet
-
-Face Recognition Attendance System
-
-- Developed a real-time face recognition attendance system using pretrained deep CNN embeddings.
-- Implemented cosine similarity matching, duplicate attendance prevention, and timestamped relational logging.
-- Built FastAPI endpoints for face registration, recognition events, user lookup, and attendance retrieval.
-- Containerized the application with Docker and added unit tests for recognition and attendance logic.
-- Tech: Python, OpenCV, MTCNN, FaceNet, FastAPI, SQLite, Docker, NumPy.
